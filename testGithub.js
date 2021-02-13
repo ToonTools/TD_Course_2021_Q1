@@ -1,1 +1,1 @@
-var myBlankVariable = null
+var myBlankVariable = 0
