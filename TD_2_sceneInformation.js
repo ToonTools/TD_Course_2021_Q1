@@ -12,6 +12,11 @@ function sceneInformation(){
 
 	// print out all of the nodes selected in a list
 
-	MessageLog.trace("\nScene name = " + sceneName +  "\nI have "+ mySelectionLength +" nodes selected.\nMy Selection = " + mySelection)
+	MessageLog.trace("	\nScene name = " 
+						+ sceneName 
+						+ "\nI have "
+						+ mySelectionLength 
+						+ " nodes selected.\nMy Selection = " 
+						+ mySelection)
 
 }
