@@ -1,6 +1,9 @@
-# TD_Course_2021_Q1
+# TD Course 2021 Q1
 Scripting material for Toon Boom Technical Director Course Jan -Mar 2021
 
+ - - - -
+ 
+### Session Summary
 <details>
   <summary> Day 5 (13-2-2021) </summary>
   
@@ -39,16 +42,22 @@ Scripting material for Toon Boom Technical Director Course Jan -Mar 2021
   2. QT creator
 </details>
 
+ - - - -
+ 
 ### Downloads
 * [Visual Studio Code](https://code.visualstudio.com/Download)
 * [Notepad++](https://notepad-plus-plus.org/downloads/)
 * [QtDesigner](https://www.qt.io/download)
 
+ - - - -
+ 
 ### Further reading
 * [Harmony v20 API documentation](https://docs.toonboom.com/help/harmony-20/scripting/script/index.html)
 * [Eloquent Javascript](https://eloquentjavascript.net/)
 * [SoloLearn Javascript](https://www.sololearn.com/learning/1024)
 
+ - - - -
+ 
 ### Other Harmony Scripters
 * [Cartoon Flow](http://www.cartoonflow.com/)
 * [ToonBoom Scripts](https://toonboomscripts.com/)
