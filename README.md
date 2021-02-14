@@ -29,6 +29,7 @@ Scripting material for Toon Boom Technical Director Course Jan -Mar 2021
   1. Get selection information
   2. Add composite
   3. Add and use display
+  4. Key Modifiers
 </details>
 
 <details>
@@ -37,6 +38,11 @@ Scripting material for Toon Boom Technical Director Course Jan -Mar 2021
   1. Find unconnected nodes
   2. QT creator
 </details>
+
+### Downloads
+* [Visual Studio Code](https://code.visualstudio.com/Download)
+* [Notepad++](https://notepad-plus-plus.org/downloads/)
+* [QtDesigner](https://www.qt.io/download)
 
 ### Further reading
 * [Harmony v20 API documentation](https://docs.toonboom.com/help/harmony-20/scripting/script/index.html)
