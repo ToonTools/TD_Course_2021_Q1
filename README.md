@@ -18,12 +18,13 @@ Scripting material for Toon Boom Technical Director Course Jan -Mar 2021
 <details>
   <summary> Day 6 (14-2-2021) </summary>
   
-  1. Hello World Function
+  1. [Hello World Function](https://github.com/toon-tools/TD_Course_2021_Q1/blob/main/TD_1_helloWorld.js)
   2. Creat a Button in Scripting Toolbar
       1. add icon
       2. add tooltip
       3. add image as tooltip
-  3. Create, write, read from external ( .txt) file
+  3. [Get Scene Information](https://github.com/toon-tools/TD_Course_2021_Q1/blob/main/TD_2_sceneInformation.js)
+  3. [Create & write to & read from external ( .txt) file](https://github.com/toon-tools/TD_Course_2021_Q1/blob/main/TD_3_createTextFile.js)
 </details>
 
 <details>
