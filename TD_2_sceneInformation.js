@@ -18,5 +18,4 @@ function sceneInformation(){
 						+ mySelectionLength 
 						+ " nodes selected.\nMy Selection = " 
 						+ mySelection)
-
 }
