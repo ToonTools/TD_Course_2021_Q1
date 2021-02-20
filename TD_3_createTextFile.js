@@ -22,7 +22,7 @@ function makeTextFile(){
 		var ans 		= MessageBox.warning(message,MessageBox.Yes, MessageBox.No)
 
 		if(ans !=MessageBox.Yes){
-			return false
+			MessageLog.trace("NO line was added to the text file")
 		}
 		else{
 			myFile.open(FileAccess.Append)
@@ -49,7 +49,7 @@ function readTextFile(){
 
 		myFile.open(FileAccess.ReadOnly)
 
-		var myFileContent = myFile.read()
+		var myFileContent = "Content of the file is:\n\n" + myFile.read()
 
 		MessageLog.trace(myFileContent)
 
