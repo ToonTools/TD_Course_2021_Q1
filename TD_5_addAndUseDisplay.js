@@ -19,8 +19,8 @@ function addAndUseDiplay(){
         // is this node a type that can be connected to a composite?
         // if any are not then return 
         var nodeName    = mySelection[i]
-        var selType     = node.type(nodeName)     
-        
+        var selType     = node.type(nodeName)   
+
         for( invalid_intex in invalidTypes ){
             var this_invalidType = invalidTypes[invalid_intex]
             if( selType == this_invalidType ){
@@ -30,8 +30,26 @@ function addAndUseDiplay(){
         }
     }
 
+    // -------------- Coordinate generation ----------------
+    var xTotal = 0
+
+    for( k in mySelection ){
+        var selNodeX = node.coordX(mySelection[k])
+        xTotal += selNodeX // same as xTotal = selNodeX + xTotal
+        //MessageLog.trace("myNode x = " + selNodeX)
+    }
+
     //------------ Composite Creation ---------------------------
-    var myNewComposite  = node.add("Top" , "myComposite" , "COMPOSITE" , 0, 0, 0)
+
+    // Y should be 200 below lowest original selection
+    // X should be exactly averate of selections x coordinates
+
+    var compX   = xTotal/mySelection.length
+    var compY    = 50
+    var compZ   = 0
+
+
+    var myNewComposite  = node.add("Top" , "myComposite" , "COMPOSITE" ,compX,compY,compZ)
 
 
     //------------- Connecting Composite to selection --------------------
@@ -45,7 +63,7 @@ function addAndUseDiplay(){
 
 
 // make composite near the source nodes
-// validate selected nodes
+
 
 
 
