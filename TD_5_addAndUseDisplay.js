@@ -7,7 +7,7 @@
 function addAndUseDiplay(){
     MessageLog.trace("addAndUseDisplays clicked")
 
-    node.add("Top" , "myComposite" , "COMPOSITE" , 0, 0, 0
+    node.add("Top" , "myComposite" , "COMPOSITE" , 0, 0, 0)
 
 
 
