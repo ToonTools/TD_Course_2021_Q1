@@ -11,11 +11,25 @@ function getSelectionInformation(){
 	if( mySelection.length > 0 ){
 		// we have at least one node selected
 		MessageLog.trace( " I have at least one node selected " )
+
+		for(var i = 0 ; i < mySelection.length ; i++ ){
+			
+			var nodeName = mySelection[i]
+			//MessageLog.trace("nodeName = " + nodeName) 
+			
+			var nodeType = node.type(nodeName)
+			//MessageLog.trace("nodeType = " + nodeType) 
+			
+			var myMessage = "\t"+i+"\t"+ nodeName + "\t" + nodeType
+			MessageLog.trace(myMessage)
+		}
 	}
 	else{
 		// we have no nodes selected
 		MessageLog.trace( " I have nothing selected " )
 	}
+
+
 
 // check at least 1 node is selected
 
