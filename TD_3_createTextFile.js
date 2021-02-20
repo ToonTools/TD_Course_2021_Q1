@@ -6,7 +6,7 @@
 
 var userName 	= about.userName
 var myPath 		= "C:\\Users\\" + userName + "\\Desktop\\"
-var fileName	= "myTextFile.txt"
+var fileName		= "myTextFile.txt"
 var fileCompletePath = myPath + fileName
 
 //MessageLog.trace(fileCompletePath)
@@ -36,10 +36,19 @@ function makeTextFile(){
 		MessageLog.trace("file does not exist so I will make a new one")
 		myFile.open(FileAccess.WriteOnly )
 		myFile.close()
-		
 	}
 }
 
 function readTextFile(){
 	MessageLog.trace("read button pressed")
+
+	var myFile = new File(fileCompletePath)
+	myFile.open(FileAccess.ReadOnly)
+
+	var myFileContent = myFile.read()
+
+	MessageLog.trace(myFileContent)
+
+
+
 }
