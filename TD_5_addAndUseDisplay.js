@@ -10,6 +10,7 @@ function addAndUseDiplay(){
     var mySelection         = selection.selectedNodes()
     var invalidTypes        = ["PEG","DISPLAY"]
     
+    //------------ Validation---------------------
     if( mySelection.length == 0){
         MessageLog.trace("nothing selected, nothing to do...")
         return
@@ -29,8 +30,11 @@ function addAndUseDiplay(){
         }
     }
 
+    //------------ Composite Creation ---------------------------
     var myNewComposite  = node.add("Top" , "myComposite" , "COMPOSITE" , 0, 0, 0)
 
+
+    //------------- Connecting Composite to selection --------------------
     for( j = 0 ; j < mySelection.length ; j++){
         var selNode = mySelection[j]
         node.link(selNode, 0 , myNewComposite, j, false, true)
