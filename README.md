@@ -28,7 +28,7 @@ Scripting material for Toon Boom Technical Director Course Jan -Mar 2021
 </details>
 
 <details>
-  <summary> Day 7 (21-2-2021) </summary>
+  <summary> Day 7 (20-2-2021) </summary>
   
   1. Get selection information
   2. Add composite
@@ -38,7 +38,7 @@ Scripting material for Toon Boom Technical Director Course Jan -Mar 2021
 </details>
 
 <details>
-  <summary> Day 8 (22-2-2021) </summary>
+  <summary> Day 8 (21-2-2021) </summary>
   
   1. Find unconnected nodes
   2. Modify Shortcuts file
