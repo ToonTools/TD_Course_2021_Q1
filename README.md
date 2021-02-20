@@ -30,19 +30,19 @@ Scripting material for Toon Boom Technical Director Course Jan -Mar 2021
 <details>
   <summary> Day 7 (20-2-2021) </summary>
   
-  1. Get selection information
-  2. Add composite
-  3. Add and use display
-  4. Key Modifiers
+  1. [Get selection information]( https://github.com/toon-tools/TD_Course_2021_Q1/blob/main/TD_4_getSelectionInformation.js)
+  2. [Add composite]( https://github.com/toon-tools/TD_Course_2021_Q1/commit/57e2623babb906f32d547e6423d45e0ecd41b764#diff-12735b03a1ccd141978d998b5bbc42eb636e549e72177919c92632705d8ff42a )
+  3. [Add and use display] ( https://github.com/toon-tools/TD_Course_2021_Q1/blob/main/TD_5_addAndUseDisplay.js ) 
   
 </details>
 
 <details>
   <summary> Day 8 (21-2-2021) </summary>
   
-  1. Find unconnected nodes
-  2. Modify Shortcuts file
-  3. Create custom menu
+  1. Key Modifiers
+  2. Find unconnected nodes
+  3. Modify Shortcuts file
+  4. Create custom menu
   
 </details>
 
