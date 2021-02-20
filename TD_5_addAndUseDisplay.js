@@ -31,26 +31,28 @@ function addAndUseDiplay(){
     }
 
     // -------------- Coordinate generation ----------------
-    var xTotal = 0
+    var xTotal  = 0
+    var yMin    = -9999
 
     for( k in mySelection ){
         var selNodeX = node.coordX(mySelection[k])
+        var selNodeY = node.coordY(mySelection[k])
         xTotal += selNodeX // same as xTotal = selNodeX + xTotal
-        //MessageLog.trace("myNode x = " + selNodeX)
+
+        if( selNodeY > yMin){ 
+            yMin = selNodeY 
+        }
     }
 
     //------------ Composite Creation ---------------------------
 
     // Y should be 200 below lowest original selection
     // X should be exactly averate of selections x coordinates
-
     var compX   = xTotal/mySelection.length
-    var compY    = 50
+    var compY   = yMin + 200
     var compZ   = 0
 
-
     var myNewComposite  = node.add("Top" , "myComposite" , "COMPOSITE" ,compX,compY,compZ)
-
 
     //------------- Connecting Composite to selection --------------------
     for( j = 0 ; j < mySelection.length ; j++){
