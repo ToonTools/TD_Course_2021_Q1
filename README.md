@@ -32,7 +32,7 @@ Scripting material for Toon Boom Technical Director Course Jan -Mar 2021
   
   1. [Get selection information]( https://github.com/toon-tools/TD_Course_2021_Q1/blob/main/TD_4_getSelectionInformation.js)
   2. [Add composite]( https://github.com/toon-tools/TD_Course_2021_Q1/commit/57e2623babb906f32d547e6423d45e0ecd41b764#diff-12735b03a1ccd141978d998b5bbc42eb636e549e72177919c92632705d8ff42a )
-  3. [Add and use display] ( https://github.com/toon-tools/TD_Course_2021_Q1/blob/main/TD_5_addAndUseDisplay.js ) 
+  3. [Add and use display](https://github.com/toon-tools/TD_Course_2021_Q1/blob/main/TD_5_addAndUseDisplay.js ) 
   
 </details>
 
