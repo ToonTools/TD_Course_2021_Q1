@@ -7,7 +7,8 @@
 function addAndUseDiplay(){
     MessageLog.trace("addAndUseDisplays clicked")
 
-    var mySelection = selection.selectedNodes()
+    var mySelection     = selection.selectedNodes()
+    var myNewComposite  = node.add("Top" , "myComposite" , "COMPOSITE" , 0, 0, 0)
 
     if( mySelection.length != 1){
         MessageLog.trace("sorry, im only handling 1 node at the moment")
@@ -15,11 +16,10 @@ function addAndUseDiplay(){
     }
     else{
         MessageLog.trace("node selected = " + mySelection[0])
+
+
+        node.link(mySelection[0], 0 , myNewComposite, 0, false, true);
     }
-
-
-    node.add("Top" , "myComposite" , "COMPOSITE" , 0, 0, 0)
-
 } 
 
 
