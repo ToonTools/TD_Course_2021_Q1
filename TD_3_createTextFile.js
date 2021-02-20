@@ -43,12 +43,19 @@ function readTextFile(){
 	MessageLog.trace("read button pressed")
 
 	var myFile = new File(fileCompletePath)
-	myFile.open(FileAccess.ReadOnly)
-
-	var myFileContent = myFile.read()
-
-	MessageLog.trace(myFileContent)
 
 
+	if (myFile.exists){
 
+		myFile.open(FileAccess.ReadOnly)
+
+		var myFileContent = myFile.read()
+
+		MessageLog.trace(myFileContent)
+
+		myFile.close()
+	}
+	else{
+		MessageLog.trace("file : " + fileCompletePath + " does not exist ")
+	}
 }
