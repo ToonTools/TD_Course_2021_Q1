@@ -23,6 +23,22 @@ function getSelectionInformation(){
 			var myMessage = "\t"+i+"\t"+ nodeName + "\t" + nodeType
 			MessageLog.trace(myMessage)
 		}
+
+		// if selection is a composite
+		if(node.type(mySelection[0]) == "COMPOSITE"){
+			//MessageLog.trace( "selection is a composite")
+			var mySelectedNode = mySelection[0]
+			var specifficFrame = 1
+			var currentCompositeMode = node.getAttr(mySelectedNode, specifficFrame, "compositeMode")
+			MessageLog.trace("current composite mode = " + currentCompositeMode.textValue())
+
+		}
+		// then also return the value of the compositeMode attribute
+
+		//
+
+
+
 	}
 	else{
 		// we have no nodes selected
