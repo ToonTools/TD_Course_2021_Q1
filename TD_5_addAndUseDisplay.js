@@ -53,6 +53,7 @@ function addAndUseDiplay(){
     var compZ   = 0
 
     var myNewComposite  = node.add("Top" , "myComposite" , "COMPOSITE" ,compX,compY,compZ)
+    node.setTextAttr(myNewComposite, "compositeMode", frame.current(), "Pass Through");
 
     //------------- Connecting Composite to selection --------------------
     for( j = 0 ; j < mySelection.length ; j++){
@@ -71,7 +72,11 @@ function addAndUseDiplay(){
 
     node.link(myNewComposite, 0,myNewDisplay, 0 , false, false)
 
+    // --- make new display curent display -----
 
+    // TODO
+
+ 
 } 
 
 
