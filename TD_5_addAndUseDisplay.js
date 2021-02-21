@@ -44,6 +44,10 @@ function addAndUseDiplay(){
         }
     }
 
+    var myRootName = node.getName(mySelection[0])
+    //MessageLog.trace("myRootName = " + myRootName)
+
+
     //------------ Composite Creation ---------------------------
 
     // Y should be 200 below lowest original selection
@@ -51,8 +55,9 @@ function addAndUseDiplay(){
     var compX   = xTotal/mySelection.length
     var compY   = yMin + 200
     var compZ   = 0
+    var compositeName = myRootName + "_COMP"
 
-    var myNewComposite  = node.add("Top" , "myComposite" , "COMPOSITE" ,compX,compY,compZ)
+    var myNewComposite  = node.add("Top" , compositeName , "COMPOSITE" ,compX,compY,compZ)
     node.setTextAttr(myNewComposite, "compositeMode", frame.current(), "Pass Through");
 
     //------------- Connecting Composite to selection --------------------
@@ -64,11 +69,28 @@ function addAndUseDiplay(){
 
     // -------------- Display Creation -----------
 
-    var displayX = compX
+    var displayX = compX 
     var displayY = compY +50
     var displayZ = 0
+    var displayName = myRootName + "_DISPLAY"
 
-    var myNewDisplay = node.add("Top", "myDisplay" , "DISPLAY", displayX, displayY, displayZ)
+    // make node name as a string
+    // check if anything in this scene has same node name
+    //    if it does, then change the display node name
+    //    if not, then you can keep the display name
+    var myDisplayFullName = "Top/" + displayName
+
+    if( node.getName(myDisplayFullName) == "" ){
+        // then there is no node of this type in the scene
+        // do nothing
+    }
+    else{
+        displayName = displayName + "_1"
+    }
+    
+    var myNewDisplay = node.add("Top", displayName , "DISPLAY", displayX, displayY, displayZ)
+
+
 
     node.link(myNewComposite, 0,myNewDisplay, 0 , false, false)
 
