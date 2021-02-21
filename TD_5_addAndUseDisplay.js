@@ -69,13 +69,21 @@ function addAndUseDiplay(){
     }
     
     
-    
+
+
+    //sort selection Left to Right in oreder of X position
+
+	var sortedSelection = mySelection.sort(function(a, b) {
+        return parseFloat(node.coordX(b)) - parseFloat(node.coordX(a));
+        });
+
+    //sortedSelection.sort().reverse()
 
     //------------- Connecting Composite to selection --------------------
-    for( j = 0 ; j < mySelection.length ; j++){
-        var selNode = mySelection[j]
+    for( j = 0 ; j < sortedSelection.length ; j++){
+        var selNode = sortedSelection[j]
         node.link(selNode, 0 , myNewComposite, j, false, true)
-        //MessageLog.trace(selNode)
+
     }
 
     // -------------- Display Creation -----------
