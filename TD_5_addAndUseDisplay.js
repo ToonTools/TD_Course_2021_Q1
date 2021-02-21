@@ -69,16 +69,11 @@ function addAndUseDiplay(){
 
     // -------------- Display Creation -----------
 
-    var displayX = compX 
-    var displayY = compY +50
-    var displayZ = 0
-    var displayName = myRootName + "_DISPLAY"
-
-    // make node name as a string
-    // check if anything in this scene has same node name
-    //    if it does, then change the display node name
-    //    if not, then you can keep the display name
-    var myDisplayFullName = "Top/" + displayName
+    var displayX            = compX 
+    var displayY            = compY +50
+    var displayZ            = 0
+    var displayName         = myRootName + "_DISPLAY"
+    var myDisplayFullName   = "Top/" + displayName
 
     if( node.getName(myDisplayFullName) == "" ){
         // then there is no node of this type in the scene
@@ -90,17 +85,10 @@ function addAndUseDiplay(){
     
     var myNewDisplay = node.add("Top", displayName , "DISPLAY", displayX, displayY, displayZ)
 
-
-
     node.link(myNewComposite, 0,myNewDisplay, 0 , false, false)
 
     // --- make new display curent display -----
-
     node.setAsGlobalDisplay(myNewDisplay);
-
-    // TODO
-
- 
 } 
 
 
