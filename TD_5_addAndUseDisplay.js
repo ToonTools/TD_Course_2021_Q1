@@ -74,6 +74,8 @@ function addAndUseDiplay(){
 
     // --- make new display curent display -----
 
+    node.setAsGlobalDisplay(myNewDisplay);
+
     // TODO
 
  
