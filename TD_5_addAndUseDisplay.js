@@ -60,6 +60,18 @@ function addAndUseDiplay(){
         node.link(selNode, 0 , myNewComposite, j, false, true)
         //MessageLog.trace(selNode)
     }
+
+    // -------------- Display Creation -----------
+
+    var displayX = compX
+    var displayY = compY +50
+    var displayZ = 0
+
+    var myNewDisplay = node.add("Top", "myDisplay" , "DISPLAY", displayX, displayY, displayZ)
+
+    node.link(myNewComposite, 0,myNewDisplay, 0 , false, false)
+
+
 } 
 
 
