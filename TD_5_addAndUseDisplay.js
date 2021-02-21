@@ -58,7 +58,18 @@ function addAndUseDiplay(){
     var compositeName = myRootName + "_COMP"
 
     var myNewComposite  = node.add("Top" , compositeName , "COMPOSITE" ,compX,compY,compZ)
-    node.setTextAttr(myNewComposite, "compositeMode", frame.current(), "Pass Through");
+    
+    
+    
+    if( KeyModifiers.IsShiftPressed()){
+        node.setTextAttr(myNewComposite, "compositeMode", frame.current(), "As Bitmap");
+    }
+    else{
+        node.setTextAttr(myNewComposite, "compositeMode", frame.current(), "Pass Through");
+    }
+    
+    
+    
 
     //------------- Connecting Composite to selection --------------------
     for( j = 0 ; j < mySelection.length ; j++){
