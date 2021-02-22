@@ -82,7 +82,7 @@ Scripting material for Toon Boom Technical Director Course Jan -Mar 2021
 ### Downloads
 * [Visual Studio Code](https://code.visualstudio.com/Download)
 * [Notepad++](https://notepad-plus-plus.org/downloads/)
-* [QtDesigner](https://www.qt.io/download)
+* [QtDesigner](https://build-system.fman.io/qt-designer-download)
 
  - - - -
  
@@ -90,6 +90,7 @@ Scripting material for Toon Boom Technical Director Course Jan -Mar 2021
 * [Harmony v20 API documentation](https://docs.toonboom.com/help/harmony-20/scripting/script/index.html)
 * [Eloquent Javascript](https://eloquentjavascript.net/)
 * [SoloLearn Javascript](https://www.sololearn.com/learning/1024)
+* [Sorting in Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 
  - - - -
  
