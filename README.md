@@ -39,17 +39,17 @@ Scripting material for Toon Boom Technical Director Course Jan -Mar 2021
 <details>
   <summary> Day 8 (21-2-2021) </summary>
   
-  1. Key Modifiers
-  2. Find unconnected nodes
-  3. Modify Shortcuts file
-  4. Create custom menu
+  1. [Key Modifiers](https://github.com/toon-tools/TD_Course_2021_Q1/blob/main/TD_6_keyModifiers.js)
+  2. ~~Find unconnected nodes~~
+  3. [Create Custom Shortcuts](https://github.com/toon-tools/TD_Course_2021_Q1/tree/main/TD_7_customShortcuts)
+  4. [Create Custom Menu Buttons](https://github.com/toon-tools/TD_Course_2021_Q1/tree/main/TD_8_customMenu)
   
 </details>
 
 <details>
   <summary> Day 9 (27-2-2021) </summary>
   
-  1. QT creator to create custom window
+  1. Create Custom Window UI (with QT creator)
   2. Expressions
   3. Master Controllers Introduction
   
