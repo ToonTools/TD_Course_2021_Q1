@@ -49,9 +49,10 @@ Scripting material for Toon Boom Technical Director Course Jan -Mar 2021
 <details>
   <summary> Day 9 (27-2-2021) </summary>
   
-  1. Create Custom Window UI (with QT creator)
-  2. Expressions
-  3. Master Controllers Introduction
+  1. [Create Custom Window UI](https://github.com/toon-tools/TD_Course_2021_Q1/tree/main/TD_9_customView)
+  2. Copy Function link
+  3. Expressions
+  4. Master Controllers Introduction
   
 </details>
 
