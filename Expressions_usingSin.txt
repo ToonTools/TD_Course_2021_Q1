@@ -1,0 +1,3 @@
+angle = value("Circle-P_Angle_z")
+radius = 3
+value = radius * sin (angle)
