@@ -31,7 +31,7 @@ function toggleValue(valAttr){
 
         MessageLog.trace("value is : " + valAttr)
     
-        var type = ["CurveModule"]
+        var type = ["CurveModule","FreeFormDeformation"]
         var nodesToShow = node.getNodes(type)
         
         if(valAttr){
