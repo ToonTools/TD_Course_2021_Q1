@@ -26,8 +26,31 @@ Controller.onHideControl = function(){
 
 // when value is true what should I do?
 function toggleValue(valAttr){
-    MessageLog.trace("button has been pressed")
+    try{
+        MessageLog.trace("button has been pressed")
+
+        MessageLog.trace("value is : " + valAttr)
     
+        var type = ["CurveModule"]
+        var nodesToShow = node.getNodes(type)
+        
+        if(valAttr){
+            for ( var i = 0 ; i < nodesToShow.length ; i++){
+                selection.addNodeToSelection(nodesToShow[i])
+            }
+    
+            Action.perform("onActionShowSelectedDeformers()", "miniPegModuleResponder");
+            selection.clearSelection()
+        }else{
+    
+            selection.clearSelection()
+            selection.addNodeToSelection(Controller.node)
+            Action.perform("onActionShowSelectedDeformers()", "miniPegModuleResponder");
+        }
+    }
+    catch(error){
+        MessageLog.trace("Error : " + error )
+    }
 }
 
 // when value is false what should I do?
