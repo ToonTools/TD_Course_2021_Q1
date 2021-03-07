@@ -67,7 +67,7 @@ Scripting material for Toon Boom Technical Director Course Jan -Mar 2021
 <details>
   <summary> Day 11 (6-3-2021) </summary>
   
-  1. Create own Script master controller
+  1. [Scripted Master Controller](https://github.com/toon-tools/TD_Course_2021_Q1/tree/main/TD_10_scriptedMasterController)
   
 </details>
 
