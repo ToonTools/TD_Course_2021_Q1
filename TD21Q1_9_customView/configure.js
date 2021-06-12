@@ -3,8 +3,8 @@ function configure(packageFolder, packageName)
   if(about.isStageEssentials() || about.isStageAdvanced() || about.isPaintMode())
     return;
 
-  ScriptManager.addView( { id : "TD_9_customView",
-                           text : translator.tr("TD_9_customView"),
+  ScriptManager.addView( { id : "TD21Q1_9_customView",
+                           text : translator.tr("TD21Q1_9_customView"),
                            action : "createView in ./configure.js"} );
 }
 function createView()

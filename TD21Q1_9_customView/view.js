@@ -4,11 +4,11 @@ function initView()
 {
   try
   {
-    var scriptedView = ScriptManager.getView("TD_9_customView");
+    var scriptedView = ScriptManager.getView("TD21Q1_9_customView");
     scriptedView.minimumWidth = UiLoader.dpiScale(375);
     scriptedView.setPreferredLayoutSize(UiLoader.dpiScale(320), UiLoader.dpiScale(380));
     
-    var ui = ScriptManager.loadViewUI(scriptedView, "./TD_9_customView.ui");
+    var ui = ScriptManager.loadViewUI(scriptedView, "./TD21Q1_9_customView.ui");
    
     var customFunction = function(){
 
