@@ -1,5 +1,5 @@
 # TD Course 2021 Q1
-Material for Toon Boom Technical Director Course Jan -Mar 2021
+Reference material for Toon Boom Technical Director Course Jan -Mar 2021
 
  - - - -
  
